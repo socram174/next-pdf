@@ -13,6 +13,9 @@ export default function Home() {
           padding: '10px 16px',
           fontSize: '16px',
           cursor: 'pointer',
+          backgroundColor: "white",
+          color: "black",
+          fontWeight: "bold"
         }}
         className="pdfBtn"
       >
