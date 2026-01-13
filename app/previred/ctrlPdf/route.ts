@@ -4,6 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 export async function GET(request: NextRequest) {
+    console.log(request)
   try {
     // Get the PDF file from the public folder
     const pdfPath = path.join(process.cwd(), 'public', 'pdfs', 'sample1.pdf');
@@ -17,6 +18,7 @@ export async function GET(request: NextRequest) {
       },
     });
   } catch (error) {
+    console.log(error)
     return new NextResponse('PDF not found', { status: 404 });
   }
 }
